@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 /**
  * Router for etherscan api requests.
  * Receives requests in form /APIMETHOD/NETWORK/[parameters].
@@ -6,7 +8,6 @@
 
 const express = require('express');
 const config = require('../config');
-const apikeys = require('../apikeys');
 const request = require('request-promise-native');
 
 const router = express.Router();
@@ -20,7 +21,7 @@ router.get('/abi/:network/:address', function (req, res) {
             module: 'contract',
             action: 'getabi',
             address: req.params.address,
-            apikeyy: apikeys.etherscan
+            apikeyy: process.env.ETHERSCAN_API_KEY
         }
     }).
         then(response => {

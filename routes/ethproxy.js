@@ -1,15 +1,16 @@
+require('dotenv').config();
+
 /**
  * Router - proxy that forwards requests to Infura nodes
  */
- 
+
 const express = require('express');
 const proxy = require('express-http-proxy');
 const config = require('../config');
 const router = express.Router();
-const apiKeys = require('../apikeys.js');
 
 const proxyReqPathResolver = req => {
-    return `/v3/${apiKeys.infura}`;
+    return `/v3/${process.env.INFURA_API_KEY}`;
 }
 
 router.use('/mainnet', proxy(config.nodes.mainnet, {proxyReqPathResolver}));
