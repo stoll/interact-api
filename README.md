@@ -1,10 +1,14 @@
-# Description
+# ✍️ Interact API
 
-This is the API of Interact, a simple tool for easy interaction with smart contracts on Ethereum.
+This is the API repository of [Interact](https://github.com/stoll/interact).
+
+[Interact](https://github.com/stoll/interact) is a simple tool to ease interaction with smart contracts on Ethereum.
+
+## 👏 Credits
 
 Interact is built on top of amazing work done by [olekon on Github](https://github.com/olekon) in [olekon/justsmartcontracts](https://github.com/olekon/justsmartcontracts).
 
-## Setup
+## ⚙️ Setup
 
 This repository is one of two key repositories in the Interact "ecosystem".
 
