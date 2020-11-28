@@ -1,7 +1,6 @@
 # Description
-This is a source code of [justsmartcontracts.dev](https://justsmartcontracts.dev) backend (or API) part. 
 
-The main website repository is [here](https://github.com/stoll/justsmartcontracts). Please refer it for information on what [justsmartcontracts.dev](https://justsmartcontracts.dev) is.
+This is the API of Interact, a simple tool for easy interaction with smart contracts on Ethereum.
 
 # Running locally
 
